@@ -31,15 +31,15 @@
 }
 
 .content__title {
-	font-size: 12vw;
-	margin: 35vh 0 0 0;
+	font-size: 9vw;
+	margin: 75vh 0 0 0;
 	position: relative;
 	font-family: 'Playfair Display', serif;
 	animation-delay: calc(var(--delay-anim) + var(--time-anim) * 0.2);
 }
 
 .content__text {
-	font-family: 'IM Fell English', serif;
+	font-family: 'Pathway Gothic One', sans-serif;
 	position: absolute;
 	font-size: 1.5em;
 	top: 4em;
@@ -72,12 +72,12 @@
 }
 
 .glitch__img {
-	position: auto;
+	position: absolute;
 	top: calc(-1 * var(--gap-vertical));
 	left: calc(-1 * var(--gap-horizontal));
-	width: calc(50% + var(--gap-horizontal) * 2);
+	width: calc(100% + var(--gap-horizontal) * 2);
 	height: calc(100% + var(--gap-vertical) * 2);
-	background: url(../img/losingfight.jpg) no-repeat 50%;
+	background: url(../img/losingfight.jpg) no-repeat 50% 0;
 	background-color: var(--blend-color-1);
 	background-size: cover;
 	transform: translate3d(0,0,0);
@@ -385,4 +385,3 @@
 		transform: translate3d(0, 0, 0);
 	}
 }
-

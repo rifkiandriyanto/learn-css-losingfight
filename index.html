@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Losingfight</title>
-		<meta name="description" content="A glitch effect using CSS animations and clip-path" />
-		<meta name="keywords" content="glitch, effect, css, animations" />
-		<meta name="author" content="losingfight" />
-		<link rel="shortcut icon" href="favicon.ico">
-		<link href="https://fonts.googleapis.com/css?family=IM+Fell+English|Playfair+Display:900" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-	</head>
-	<body class="losingfight">
-		<main>
-			<div class="message">Sorry, your browser does not support clip-path on HTML elements!</div>
-			<div class="content">
-				<div class="glitch">
-					<div class="glitch__img"></div>
-					<div class="glitch__img"></div>
-					<div class="glitch__img"></div>
-					<div class="glitch__img"></div>
-					<div class="glitch__img"></div>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Losingfight</title>
+	<meta name="description" content="A glitch effect using CSS animations and clip-path" />
+	<meta name="keywords" content="glitch, effect, css, animations" />
+	<meta name="author" content="losingfight" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=IM+Fell+English|Playfair+Display:900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+</head>
+
+<body class="losingfight loading">
+	<svg class="hidden">
+		<symbol id="icon-drop" viewBox="0 0 24 24">
+			<title>drop</title>
+			<path d="M16.899,3.05c-0.085-0.068-0.192-0.095-0.299-0.074L7.947,4.779c-0.17,0.034-0.291,0.182-0.291,0.353v7.364c-0.494-0.536-1.199-0.873-1.983-0.873c-1.491,0-2.704,1.213-2.704,2.704s1.213,2.704,2.704,2.704c1.491,0,2.705-1.213,2.705-2.704V7.952l7.933-1.659v4.399c-0.494-0.535-1.199-0.873-1.983-0.873c-1.491,0-2.704,1.213-2.704,2.704c0,1.492,1.213,2.705,2.704,2.705c1.49,0,2.704-1.213,2.704-2.705V3.33C17.031,3.221,16.982,3.119,16.899,3.05 M5.673,16.311c-1.094,0-1.983-0.889-1.983-1.983s0.889-1.983,1.983-1.983c1.095,0,1.983,0.889,1.983,1.983S6.768,16.311,5.673,16.311 M14.327,14.508c-1.095,0-1.983-0.889-1.983-1.984c0-1.094,0.889-1.982,1.983-1.982c1.094,0,1.983,0.889,1.983,1.982C16.311,13.619,15.421,14.508,14.327,14.508 M16.311,5.558L8.377,7.217V5.428l7.933-1.659V5.558z"></path>
+		</symbol>
+	</svg>
+	<main>
+
+		<div class="content content--fixed">
+			<header class="losingfight-header">
+				<h1 class="losingfight-header__title">New EP Lost In Colour listen here </h1>
+				<div class="losingfight-links">
+					<a class="losingfight-icon losingfight-icon--drop" href="https://smarturl.it/lostincolour"
+						title="New EP Lost In Colour listen here">
+						<svg class="icon icon--drop">
+							<use xlink:href="#icon-drop"></use>
+						</svg></a>
 				</div>
-				<h2 class="content__title">Losing Fight</h2>
-				<p class="content__text">Evening was in the wood, louring with storm. A time of drought had sucked the weedy pool  and baked the channels; birds had done with song.</p>
+				
+			</header>
+			
+		</div>
+		<div class="content">
+			<div class="glitch">
+				<div class="glitch__img"></div>
+				<div class="glitch__img"></div>
+				<div class="glitch__img"></div>
+				<div class="glitch__img"></div>
+				<div class="glitch__img"></div>
 			</div>
-		</main>
-		<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/demo.js"></script>
-	</body>
+			<h2 class="content__title">Losing Fight</h2>
+			<p class="content__text">Forming in 2016, Losing Fight are emo pop/alt-rock merge abit post-hardcore and
+				math rock, hailing from Kuningan, west java, Indonesia, the trio-piece group trying to fit in on the
+				ground to the scene, they have released two EP titled When World Left Me Alone and Some Hope, Some
+				Tired, their frist full-length album, No Longer, Just A While and now they will released the sophomore
+				LP, 'Lost In Colour'.</p>
+		</div>
+	</main>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/demo.js"></script>
+</body>
+
 </html>
